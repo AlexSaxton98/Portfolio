@@ -1,0 +1,133 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.background{
+    background-color: #383838;
+}
+.centerAlign{
+    text-align: center;
+}
+
+h1{
+    color: cornflowerblue;
+}
+
+.menuBar{
+    position:fixed;
+    display: block;
+    top: 0px;
+    right: 1%;
+}
+.menuBar:hover{
+   filter:drop-shadow(0em 0em 0.2em white);
+   transition: 0.5s;
+   cursor: pointer;
+}
+/* .menuBar:hover::after{
+    
+    content: transition: 0.5s;
+    
+ } */
+.infoContainers{
+    width: 99%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subjectHeadings{
+    margin-bottom: 5%;
+}
+.subjectBorders{
+    border: solid grey 15px;
+    margin-bottom: 15px;
+    width: 25%;
+    background-color: #606060;
+}
+#aboutMeContainer:hover{   
+    transform: scale(1.2);   
+    transition: 1s;  
+    cursor: pointer;
+}
+#designContainer:hover{ 
+    transform: scale(1.2);
+    transition: 1s;  
+    cursor: pointer;
+}
+#modellingContainer:hover{
+    transform: scale(1.2);   
+    transition: 1s;  
+    cursor: pointer;
+}
+#codingContainer:hover{
+    transform: scale(1.2);   
+    transition: 1s;  
+    cursor: pointer;
+}
+
+
+
+#aboutMeText{
+    display: none;
+    width:70%;
+    animation-duration: 2s;
+    animation-name: contentReveal;
+    
+}
+#designText{
+    display: none;
+    width:70%;
+    animation-duration: 2s;
+    animation-name: contentReveal;
+}
+#modellingText{
+    display: none;
+    width:70%;
+    animation-duration: 2s;
+    animation-name: contentReveal;
+}
+#codingText{
+    display: none;
+    width:70%;
+    animation-duration: 2s;
+    animation-name: contentReveal;
+}
+
+@keyframes contentReveal {
+    from{
+        opacity: 0%;
+        transform:translateY(-50px)
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+.Images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Images3D{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mandoImage{
+    max-width: 40%;
+    padding: 5%;
+    align-self: center;
+}
+.modelImage{
+    /* max-height: 40%; */
+    max-width: 70%;
+    padding: 2%;
+}
