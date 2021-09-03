@@ -19,6 +19,7 @@ h1{
     display: block;
     top: 0px;
     right: 1%;
+    transition: filter 0.5s;
 }
 .menuBar:hover{
    filter:drop-shadow(0em 0em 0.2em white);
@@ -37,6 +38,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: scale 1s; 
 }
 .subjectHeadings{
     margin-bottom: 5%;
@@ -47,24 +49,32 @@ h1{
     width: 25%;
     background-color: #606060;
 }
+#aboutMeContainer{
+    transition: transform 1s; 
+}
 #aboutMeContainer:hover{   
-    transform: scale(1.2);   
-    transition: 1s;  
+    transform: scale(1.2);        
     cursor: pointer;
+}
+#designContainer{
+    transition: transform 1s; 
 }
 #designContainer:hover{ 
     transform: scale(1.2);
-    transition: 1s;  
     cursor: pointer;
 }
+#modellingContainer{
+    transition: transform 1s; 
+}
 #modellingContainer:hover{
-    transform: scale(1.2);   
-    transition: 1s;  
+    transform: scale(1.2);     
     cursor: pointer;
+}
+#codingContainer{
+    transition: transform 1s; 
 }
 #codingContainer:hover{
     transform: scale(1.2);   
-    transition: 1s;  
     cursor: pointer;
 }
 
@@ -88,6 +98,7 @@ h1{
     width:70%;
     animation-duration: 2s;
     animation-name: contentReveal;
+    
 }
 #codingText{
     display: none;
